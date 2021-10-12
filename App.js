@@ -13,6 +13,8 @@ import ContactScreen from './app/screens/ContactScreen';
 import IngredientWidget from './app/components/recipes/IngredientWidget';
 import RecipeScreen from './app/screens/RecipeScreen';
 
+// THIS MAIN PAGE IS CURRENTLY ONLY FOR TESTING OUT DIFFERENT COMPONENTS!
+
 const categories = [
     {name: "Spicy"},
     {name: "Indian"},
