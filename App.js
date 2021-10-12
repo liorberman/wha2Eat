@@ -1,21 +1,28 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { View } from 'react-native';
+import RoundImage from './app/components/images/RoundImage';
+import Heading from './app/components/main/Heading';
+import Screen from './app/components/main/Screen';
+import CategoryWidget from './app/components/recipes/CategoryWidget';
+import RecipeCard from './app/components/recipes/RecipeCard';
+import ListItem from './app/components/lists/ListItem';
+import ProfileScreen from './app/screens/ProfileScreen';
+import HomeScreen from './app/screens/HomeScreen';
+import EditProfileScreen from './app/screens/EditProfileScreen';
+import ContactScreen from './app/screens/ContactScreen';
+import IngredientWidget from './app/components/recipes/IngredientWidget';
+import RecipeScreen from './app/screens/RecipeScreen';
+
+const categories = [
+    {name: "Spicy"},
+    {name: "Indian"},
+]
+
+
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+     <RecipeScreen/>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
